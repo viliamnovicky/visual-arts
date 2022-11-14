@@ -1,0 +1,323 @@
+.navbar ul li a {
+    font-size: 0.9rem;
+}
+
+#about-me {
+    width: 95%;
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#citat {
+    width: 95%;
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#about {
+    width: 95%; 
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#about2 {
+    margin-left: 7rem;
+}
+
+.navbar {
+    margin-top: 2rem;
+}
+
+/* LANG */
+
+.lang_div {
+    position: relative;
+    display: grid;
+    max-width: 200px;
+    right: 0;
+    left: 0;
+    top: 11.2rem;
+    margin: auto;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .lang {
+      text-align: center;
+    position: relative;
+    display: grid;
+    padding: 0.2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+.produkty ul {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+}
+    
+.produkty ul li a {
+    width: 500px;
+    height: 500px;
+    font-size: 60px;
+    padding-top: 215px;
+}
+
+.produkty video {
+    max-width: 500px;
+}
+
+.produkty h1 {
+    margin-top: -8rem;
+    margin-bottom: 5.7rem;
+    font-size: 2rem;
+}
+
+.cont-slider {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    align-items: flex-end;
+    grid-gap: 5px;
+}
+
+/* .carousel {
+    width: 50%;
+    margin: auto;
+} */
+
+.popis-grid {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    margin-bottom: -14.2rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    transition: all 0.5s;
+}
+
+/* PORTFOLIO*/
+
+#portfolio-images {
+    padding-top: 0;
+    margin-top: 3rem;
+}
+
+#portfolio-images a {
+    opacity: 100%;
+    color:white;
+}
+
+#port {
+    padding-top: 0;
+}
+
+#portret a{
+    display: flex;
+    height: 300px;
+    background: url(../img/portret-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#svadba a{
+    display: flex;
+    height: 300px;
+    background: url(../img/svadba-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#sen a{
+    display: flex;
+    height: 300px;
+    background: url(../img/sen-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#priroda a{
+    display: flex;
+    height: 300px;
+    background: url(../img/priroda-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#zvierata a{
+    display: flex;
+    height: 300px;
+    background: url(../img/zvierata-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#portfolio-images p {
+    margin: auto;
+}
+
+#udalost a{
+    display: flex;
+    height: 300px;
+    background: url(../img/udalost-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#architektura a{
+    display: flex;
+    height: 300px;
+    background: url(../img/architektura-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+.port-nazov {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#portret-nazov {
+    justify-content: center;
+    margin: 0;
+}
+
+#svadba-nazov {
+    justify-content: center;
+    margin: 0;
+}
+
+#priroda-nazov {
+    justify-content: center;
+    margin: 0;
+}
+
+#sen-nazov {
+    justify-content: center;
+    margin: 0;
+}
+
+#udalost-nazov {
+    justify-content: center;
+    margin: 0;
+}
+
+
+.gallery {
+    grid-template-columns: repeat(2, auto);
+}
+
+.gallery img{
+    width: 350px;
+    }
+
+
+#formular {
+    width: 60%;
+    margin-left: 20%;
+}
+
+#formular div input {
+    width: 20rem;
+}
+
+#formular select {
+    width: 20rem;
+}
+
+#formular div textarea {
+    width: 20rem;
+}
+
+#odoslať {
+    width: 20rem;
+}
+
+.container-cennik {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cont-produkty {
+    margin-top: 4rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+}
+
+.cont-produkty img,
+.cont-produkty video {
+    width: 75%;
+}
+
+.blog-text p {
+    font-size: 1rem;
+  }
+
+.cont-slider {
+    border-bottom: none;
+}
+
+.popis .btn {
+    margin-bottom: -40rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#objednávka {
+    background: url(../img/objednavka_2.jpg)
+    no-repeat center center/cover; 
+}
+
+#objednávka h1 {
+    font-size: 7rem;
+}
+
+#grid-obrazy {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+#grid-obrazy div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    margin-top: 0.5rem;
+    }
+
+.obraz-grid {
+    max-height: 500px;
+}
+
+.cont-produkty {
+    grid-gap: 40px;
+  }
+
+  .produkty-grid div {
+    margin-top: 10rem;
+  }
+
+  .obraz-grid img,
+.obraz-grid video {
+  width: 95%;
+}
+
+#blog-gallery a {
+    width: 95%;
+  }
+
+.section {
+    width: 100%;
+}
+
+.cont1 {
+    width: 100%;
+}
+
+.cont1 p,
+.cont1 img {
+    width: 90%;
+}
+
+.slider {
+    height: calc((90vw / 3) * 2);
+  }

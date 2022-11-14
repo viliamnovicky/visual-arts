@@ -1,0 +1,30 @@
+
+.gallery img{
+    width: 300px;
+    }
+
+#header h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+#header h5 {
+    font-size: 1rem;
+    letter-spacing: 1.23rem;
+}
+
+.navbar ul {
+    top: 9.5rem;
+}
+
+.lang_div {
+    position: relative;
+    display: grid;
+    max-width: 200px;
+    right: 0;
+    left: 0;
+    top: 10rem;
+    margin: auto;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+  }

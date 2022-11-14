@@ -1,0 +1,29 @@
+.place-name-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.place-name {
+    display: inline;
+    font-size: 10rem;
+    text-align: center;
+    padding: 0;
+
+    @include respond(tab-port) {
+        font-size: 5rem;
+    }
+}
+
+#kirkjufell {
+    letter-spacing: 2.9rem;
+    margin-left: 2.9rem;
+
+    @include respond(tab-port) {
+        letter-spacing: 1rem;
+        margin-left: 1rem;
+    }
+}

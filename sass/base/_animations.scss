@@ -1,0 +1,46 @@
+@keyframes rotate {
+    from {
+      transform: rotateZ(360deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes goUp {
+    0% {
+      margin-top: 15rem;
+      opacity: 0;
+      width: 150%;
+    }
+  
+    50% {
+      margin-top: 8rem;
+      width: 100%;
+    }
+  
+    100% {
+      opacity: 1;
+      
+    }
+}
+
+@keyframes modalUp {
+  0% {
+    margin-bottom: -80vh;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}

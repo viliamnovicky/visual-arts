@@ -1,0 +1,150 @@
+/* NAVBAR */
+
+.navbar {
+    z-index: 2;
+    font-family: 'Playfair Display';
+    animation: fadeIn;
+    animation-duration: 1s;
+
+    ul {
+        z-index: 2;
+        background: rgba($color-light, 0.8);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90vw;
+        margin: auto;
+        padding: 0;
+        height: 4rem;
+        border-top: white 0.1rem solid;
+        border-bottom: white 0.1rem solid;
+
+        li {
+            display: grid;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            list-style-type: none;
+            transition: all 0.3s ease;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                background: rgba($color-grey, 0.5);
+                
+                a {
+                    color: white;
+                }
+            }
+
+            a {
+                z-index: 1111111111;
+                color: black;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                @include respond(tab-port) {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+.island-days {
+
+    &-hamburger {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color-grey, 0.3);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+
+
+        i {
+            color: white;
+            font-size: 2rem;
+            margin-left: 5rem;
+        }
+
+        p {
+            margin: 0;
+            margin-left: 5rem;
+            padding: 0;
+            font-size: 2rem;
+            color: white;
+            font-family: "Dosis", sans-serif;
+        }
+
+        @include respond(tab-port) {
+            margin-top: -38rem;
+            width: 20rem;
+            height: 5rem;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+    .hamburger-close {
+        margin-top: -5rem;
+    }
+
+    ul {
+        grid-template-columns: repeat(8, 1fr);
+        border-top: none;
+        border-bottom: none;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            width: 90vw;
+            background: rgba($color-grey, 0.3);
+            height: 100%;
+        }
+
+        li {
+            a {
+                @include respond(tab-port) {
+                    font-size: 2rem;
+                    color: white;
+                    font-family: "Dosis", sans-serif;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+#sticky-days {
+    top: 4rem;
+  }
+  
+.navbar-active {
+    background: rgba($color-grey, 0.1);
+  }
+
+.navbar-inactive,
+.navbar-inactive a {
+    cursor: default;
+    color: rgba($color-grey, 0.5) !important;
+
+    a {
+        @include respond(tab-port) {
+            font-size: 2rem;
+            background: none!important;
+        }
+    }
+
+    &:hover {
+        background: none !important;
+    }
+}

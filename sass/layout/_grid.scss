@@ -1,0 +1,187 @@
+.cont-grid-1x {
+  grid-template-columns: 1fr;
+  width: 900px;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  grid-gap: 2rem;
+  padding-bottom: 5rem;
+
+  @include respond(tab-port) {
+    width: 95vw;
+  }
+
+  p {
+      margin: auto;
+      text-align: justify;
+      font-size: $font-size-paragraph-blog;
+      width: 80%;
+
+      @include respond(tab-port) {
+        width: 95vw;
+        font-size: $font-size-paragraph;
+      }
+  }
+  
+  img {
+      margin: auto;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+
+      @include respond(tab-port) {
+        width: 95vw;
+      }
+  }
+}
+
+.cont-grid-2x {
+  animation: goUp;
+  animation-duration: 1s;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  grid-gap: 1.6rem;
+
+  @include respond(tab-port) {
+    grid-template-columns:  1fr;
+  }
+}
+
+.cont-1-of-2,
+.cont-1-of-2 img,
+.cont-1-of-2 video {
+    width: 80%;
+    margin: auto;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    @include respond(tab-port) {
+        width: 95%;
+      }
+}
+
+.cont-grid-3x {
+  animation: goUp;
+  animation-duration: 1s;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  grid-gap: 1.6rem;
+
+  @include respond(tab-land) {
+    grid-template-columns:  1fr 1fr;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns:  1fr;
+  }
+}
+
+.grid-products {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    background: rgba($color-grey, 0.3);
+    padding: 1.6rem 0;
+  }
+  
+  h1 {
+    /* padding-top: 15rem; */
+    color: white;
+    position: relative;
+    width: 100%;
+  }
+
+  .btn {
+    padding: 1.6rem 4.8rem;
+    font-size: 2.4rem;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background: rgba(white, 0.5);
+
+    @include respond(tab-land) {
+      background: rgba(white, 0.8);
+    }
+
+    @include respond(tab-port) {
+      padding: 1rem 3rem;
+    }
+
+    &:hover {
+        background: rgba(white, 0.8);
+      }
+      
+  }
+
+}
+
+.images-grid {
+  height: 33.3vw;
+
+  @include respond(tab-port) {
+    height: 33.3vh;
+  }
+
+  div {
+    width: calc(50vw - 1.6rem);
+
+    @include respond(tab-port) {
+      width: 100vw
+    }
+  }
+}
+
+.blogs-grid {
+  height: 20vw;
+  position: relative;
+
+  @include respond(tab-land) {
+    height: 35vh;
+  }
+
+  div {
+    width: calc((100vw / 3) - 1.6rem);
+    position: absolute;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+
+  p {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    color: white;
+    font-size: $font-size-paragraph;
+    z-index: 1000;
+
+    @include respond(tab-port) {
+      top: 10vh;
+    }
+  }
+}

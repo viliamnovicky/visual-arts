@@ -1,0 +1,172 @@
+
+body {
+    position: relative;
+}
+
+#header {
+    font-family: "Playfair Display";
+    padding-bottom: 1rem;
+    text-align: center;
+    position: relative; 
+}
+
+a {
+    position: relative;
+    z-index: -2;
+}
+
+.menu-wrap {
+    position: fixed; 
+    top: 6px;
+}
+
+.menu-wrap .tooggler {
+    visibility: visible;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background:rgba(211, 211, 211, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Hamburger stredna ciara  */
+
+.menu-wrap .hamburger > div {
+    display: flex;
+    position: absolute;
+    flex: none;
+    width: 40px;
+    height: 2px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+/*Hamburger spodna a horna ciara*/
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 40px;
+    height: 2px;
+    background: white;
+}
+
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+    z-index: 1;
+}
+
+/*Tooggler animation*/
+
+.menu-wrap .tooggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+    z-index: 1;
+}
+
+/*Turns tooggler into X*/
+
+.menu-wrap .tooggler:checked + .hamburger > div:before,
+.menu-wrap .tooggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    z-index: 1;
+}
+
+/* Rotate on Hover when checked */
+
+.menu-wrap .tooggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+    z-index: 1;
+}
+
+/*Show menu */
+
+.menu-wrap .tooggler:checked ~ .navbar {
+    visibility: visible;
+    z-index: 1;
+}
+
+.menu-wrap .tooggler:checked ~ .navbar > div {
+    transform: scale(1);
+    z-index: 1;
+}
+
+.menu-wrap .tooggler:checked ~ .navbar > div > div{
+    opacity: 1;
+    z-index: 1;
+}
+
+.navbar ul {
+    margin: 0;
+    width: 100%;
+    height: 2.5rem;
+    border-width: 100%;
+
+}
+
+.menu-wrap .navbar {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-wrap .navbar > div {
+    background: rgba(0, 0, 0, 0.7);
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.8s ease;
+    border-radius: 50%;
+}
+
+.menu-wrap .navbar > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.navbar ul li {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    color: white;
+
+} 
+
+.navbar ul li a{
+    color: white;
+} 

@@ -1,0 +1,149 @@
+.wrapper {
+    margin-top: 8rem;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.fixed-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: left;
+    display: table;
+
+    div {
+        width: 60%;
+        margin: auto;
+        margin-top: 25vh;
+        padding: 3.2rem 0;
+        transition: all 0.5s;
+
+        @include respond(tab-land) {
+            background: rgba($color-grey, 0.5);
+        }
+
+        @include respond(tab-port) {
+            width: 95%;
+        }
+
+        &:hover {
+            background: rgba($color-grey, 0.5);
+            width: 50%;
+            margin: auto;
+            margin-top: 25vh;
+            padding: 3.2rem 0;
+
+            @include respond(tab-port) {
+                width: 95%;
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: auto;
+        padding-bottom: 3.2rem;
+    }
+
+    h6 {
+        margin: auto;
+        padding-left: 15%;
+        padding-bottom: 0.8rem;
+        font-size: 2rem;
+
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            padding-left: 3%;
+        }
+    }
+
+    p {
+        text-align: justify;
+        font-size: $font-size-paragraph;
+        margin: auto;
+        width: 85%;
+        font-size: 2rem;
+
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        display: block;
+        margin: auto;
+        padding-left: 15%;
+        padding-bottom: 0.8rem;
+        transition: all 0.5s;
+
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            padding-left: 3%;
+        }
+
+        span {
+            opacity: 0;
+            transition: all 0.5s;
+            margin-left: 8rem;
+
+            @include respond(tab-land) {
+                opacity: 1;
+                color: rgba(white, 0.3);
+
+              }
+
+              @include respond(phone) {
+                margin-left: 3rem;
+            }
+        }
+
+        &:hover {
+            background: rgba($color-grey, 0.8);
+        }
+
+        &:hover span {
+          opacity: 1;
+      }
+    }
+
+    i {
+        padding-right: 1.6rem;
+        display: inline;
+
+        &:hover {
+            color: white;
+
+            span {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.scroll-bg {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color-grey, 0.8);
+    color: white;
+    height: 12.8rem;
+    margin: auto;
+}

@@ -1,0 +1,58 @@
+/*Formulár odoslaný*/
+
+.success {
+    position: relative;
+    h1 {
+        position: absolute;
+        top: 20rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        font-size: 4rem;
+
+        @include respond(phone) {
+            top: 10rem;
+          }
+    }
+
+    p {
+        font-size: 3rem;
+        position: absolute;
+        top: 35rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+
+        @include respond(phone) {
+            top: 25rem;
+          }
+    }
+
+    .btn {
+        position: absolute;
+        top: 45rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        padding: 2rem 2rem;
+        color: white;
+        font-size: 3rem;
+        background: rgba($color-grey, 0.3);
+        width: 20%;
+
+        @include respond(mini-phone) {
+            top: 40rem;
+          }
+
+        @include respond(mini-phone) {
+            top: 35rem;
+          }
+
+        &:hover {
+            background: rgba($color-grey, 0.5);
+        }
+    }
+}

@@ -1,0 +1,176 @@
+#image1 {
+    background: url(../img/obraz01.jpg) no-repeat center center/cover;
+}
+
+#image2 {
+    background: url(../img/obraz02.jpg) no-repeat center center/cover;
+}
+
+#image3 {
+    background: url(../img/obraz03.jpg) no-repeat center center/cover;
+}
+
+#image4 {
+    background: url(../img/obraz04.jpg) no-repeat center center/cover;
+}
+
+#image5 {
+    background: url(../img/obraz05.jpg) no-repeat center center/cover;
+}
+
+#image6 {
+    background: url(../img/obraz06.jpg) no-repeat center center/cover;
+}
+
+#image7 {
+    background: url(../img/obraz07.jpg) no-repeat center center/cover;
+}
+#image8 {
+    background: url(../img/obraz08.jpg) no-repeat center center/cover;
+}
+#image9 {
+    background: url(../img/obraz09.jpg) no-repeat center center/cover;
+}
+
+#image10 {
+    background: url(../img/obraz10.jpg) no-repeat center center/cover;
+}
+
+#image1b {
+    background: url(../img/obraz01b.jpg) no-repeat center center/cover;
+}
+
+#image2b {
+    background: url(../img/obraz02b.jpg) no-repeat center center/cover;
+}
+
+#image3b {
+    background: url(../img/obraz03b.jpg) no-repeat center center/cover;
+}
+
+#image4b {
+    background: url(../img/obraz04b.jpg) no-repeat center center/cover;
+}
+
+#image5b {
+    background: url(../img/obraz05b.jpg) no-repeat center center/cover;
+}
+
+#image6b {
+    background: url(../img/obraz06b.jpg) no-repeat center center/cover;
+}
+
+#image7b {
+    background: url(../img/obraz07b.jpg) no-repeat center center/cover;
+}
+#image8b {
+    background: url(../img/obraz08b.jpg) no-repeat center center/cover;
+}
+#image9b {
+    background: url(../img/obraz09b.jpg) no-repeat center center/cover;
+}
+
+#image10b {
+    background: url(../img/obraz10b.jpg) no-repeat center center/cover;
+}
+
+#grid-store-image-description {
+    position: relative;
+    background: rgba(white, 0.8);
+    padding: 6rem 0;
+    transition: all 0.5s;
+    margin-bottom: 0;
+    margin-top: 0;
+    top: 15%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0;
+
+    div {
+      margin: 0;
+    }
+
+    @include respond(tab-port) {
+      top: 0;
+        padding: 0 0;
+        height: 55vh;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.4rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+
+        @include respond(mini-phone) {
+            font-size: 1.6rem;
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+
+        @include respond(mini-phone) {
+          font-size: 1.4rem;
+          line-height: 1.5rem;
+      }
+    }
+
+    div:nth-child(2) {
+        border-left: 1px solid rgba($color-grey, 0.3);
+        border-right: 1px solid rgba($color-grey, 0.3);
+
+        @include respond(tab-port) {
+            padding: 1rem 0;
+            margin: auto;
+            width: 80%;
+            border-top: 1px solid rgba($color-grey, 0.3);
+            border-bottom: 1px solid rgba($color-grey, 0.3);
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+}
+
+.store-bg {
+    display: grid;
+    width: 100%;
+    height: 95vh;
+
+    #btn-buy-image {
+        font-size: 2rem;
+        background: rgba(white, 0.3);
+        padding: 2rem 5rem;
+
+        @include respond(tab-land) {
+            background: rgba(white, 0.8);
+        }
+
+        &:hover {
+            background: rgba(white, 0.8);
+        }
+    }
+}
+
+.mobile-image-detail {
+    visibility: hidden;
+
+    @include respond(tab-port) {
+        visibility: visible;
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        bottom: 0vh;
+    }
+}
+
+

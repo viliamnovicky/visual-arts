@@ -1,0 +1,192 @@
+.index-cont {
+  color: white;
+  height: 65vh;
+  text-align: center;
+  position: relative;
+
+  @include respond(tab-land) {
+    height: 40vh;
+  }
+}
+
+.index-text {
+  width: 25vw;
+  position: absolute;
+  background: rgba(black, 0.1);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    width: 90vw;
+  }
+}
+
+#cont1 {
+  margin-top: 8rem;
+  background: url("../img/home1.jpg") no-repeat center/cover;
+  animation: goUp;
+  animation-duration: 1s;
+
+  @include respond(tab-land) {
+    background: url("../img/home1m.jpg") no-repeat center center/cover;
+  }
+
+  #index-text1 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 65%;
+
+    @include respond(tab-land) {
+      top: 25%;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+    @include respond(phone) {
+      top: 2.5vh;
+      height: 35vh;
+    }
+
+  }
+
+  p {
+    margin-top: 2vh;
+    padding: 0 5rem;
+
+    @include respond(tab-land) {
+      padding: 0 1rem;
+    }
+  }
+
+  #about-me {
+    padding-top: 5rem;
+    font-size: 4rem;
+    font-weight: lighter;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  #quote {
+    font-weight: lighter;
+    font-style: italic;
+
+    @include respond(phone) {
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  }
+
+  #about {
+    padding-bottom: 5rem;
+
+    @include respond(phone) {
+      padding-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+#cont2 {
+  background: url("../img/home2.jpg") no-repeat center center/cover;
+
+  @include respond(tab-land) {
+    background: url("../img/home2m.jpg") no-repeat center center/cover;
+  }
+
+  #index-text2 {
+    height: 10vh;
+    top: 15vh;
+    left: 15%;
+
+    @include respond(tab-land) {
+      top: 45%;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
+    #about2 {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#cont3 {
+  background: url("../img/home3.jpg") no-repeat center center/cover;
+
+  @include respond(tab-land) {
+    background: url("../img/home3m.jpg") no-repeat center center/cover;
+  }
+
+  #index-text3 {
+    height: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+
+    @include respond(tab-land) {
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+}
+
+#cont4 {
+  position: relative;
+  background: url("../img/home4.jpg") no-repeat center center/cover;
+
+  @include respond(tab-land) {
+    background: url("../img/home4m.jpg") no-repeat center center/cover;
+  }
+
+  #index-text4 {
+    width: 60%;
+    margin: auto;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(tab-land) {
+      width: 90vw;
+      top: 1rem;
+    }
+  }
+
+  #about4 {
+    padding: 2rem 2rem;
+  }
+}
+
+#port-btn {
+  position: absolute;
+  top: 30vh;
+  text-decoration: none;
+  padding: 3.2rem 3.2rem;
+  color: white;
+  background: rgba($color-grey, 0.3);
+  transition: all 0.5s;
+  font-size: $font-size-button;
+  transform: translateX(-50%);
+
+  @include respond(tab-land) {
+    top: 25vh;
+    padding: 2rem 3rem;
+    background: rgba($color-grey, 0.6);
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+    top: auto;
+    bottom: 1rem;
+    padding: 1rem 5rem;
+    background: rgba($color-grey, 0.6);
+  }
+}
+
+#port-btn:hover {
+  background: rgba($color-grey, 0.6);
+}

@@ -1,0 +1,78 @@
+footer {
+  background: rgba($color-grey, 0.5);
+}
+
+.footer {
+  display: grid;
+  margin: auto;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2px;
+  height: 8vh;
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    height: 100%;
+
+    a {
+        transition: all 0.5s;
+        text-align: center;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        
+
+        &:hover {
+            background: white;
+          }
+
+          &:hover i{
+            color: rgba($color-grey, 0.8);
+          }
+      }
+
+      p {
+        margin: auto;
+      }
+
+      i {
+        font-size: 2.4rem;
+        color: white;
+
+        @include respond(phone) {
+          font-size: 1.5rem
+        } 
+      }
+
+
+  }
+}
+
+#copy {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  } 
+}
+
+.cont-foot {
+  margin-top: 24vh;
+}

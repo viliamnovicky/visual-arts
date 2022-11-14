@@ -1,0 +1,137 @@
+.prices-bg {
+  animation: goUp;
+  animation-duration: 1s;
+}
+
+#prices-bg-wedding {
+  background: url(../img/cennik-svadba.jpg) no-repeat center center/cover;
+}
+
+#prices-bg-events {
+  background: url(../img/cennik-portret.jpg) no-repeat center center/cover;
+}
+
+.prices-header {
+  margin-top: 8rem;
+  background: rgba(white, 0.5);
+  text-align: center;
+  padding: 3.2rem 0;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.prices-cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 0.2rem;
+
+  @include respond(tab-land) {
+    grid-template-columns:  1fr;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 100;
+    color: white;
+    background: rgba($color-grey, 0.5);
+    padding: 3.2rem 0;
+    margin-bottom: 0;
+
+    &span {
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    padding-top: 3.2rem;
+    padding-bottom: 4.8rem;
+    height: 45vh;
+    margin-bottom: 0;
+    transition: all 0.5s;
+
+    @include respond(tab-land) {
+      background: rgba(white, 0.6);
+      height: calc(100% - 13.8rem);
+    }
+
+    li {
+      list-style: none;
+      padding-bottom: 1.6rem;
+      font-size: 1.6rem;
+
+      @include respond(tab-land) {
+        padding-bottom: 0.6rem;
+      }
+
+      &:first-child {
+        opacity: 0;
+        background: rgba($color-grey, 0.5);
+        color: white;
+        width: 90%;
+        margin: auto;
+        transition: all 0.5s;
+        border-radius: 1rem;
+        padding: 0.8rem 0.8rem;
+        margin-bottom: 0.8rem;
+
+        @include respond(tab-land) {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+        background: rgba(white, 0.6);
+
+        li:first-child {
+          opacity: 1;
+        }
+
+        .btn {
+            opacity: 1;
+            font-size: 2rem;
+
+            @include respond(tab-land) {
+              font-size: 1rem;
+            }
+          }
+      }
+  }
+
+  .cont {
+    background: rgba(white, 0.5);
+  }
+
+  .btn {
+    opacity: 0;
+    margin-top: 1.6rem;
+    padding: 1.6rem 3.2rem;
+    background: rgba(43, 43, 43, 0.4);
+    color: white;
+    transition: all 0.5s;
+
+    @include respond(tab-land) {
+      opacity: 1;
+      background: rgba(43, 43, 43, 0.8);
+    }
+
+    &:hover {
+        background: rgba($color-grey, 0.8);
+      }
+      
+  }
+}
+
+#prices-bg-events .prices-cont ul li:first-child {
+  opacity: 1;
+  background: none;
+  color: black;
+  padding: 0;
+}
+
+#another-events {
+  margin-top: 0;
+  border-top: 0.2rem solid rgba($color-grey, 1);
+}

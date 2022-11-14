@@ -1,0 +1,198 @@
+.lang_div {
+    position: relative;
+    display: grid;
+    max-width: 200px;
+    right: 0;
+    left: 0;
+    top: 11.7rem;
+    margin: auto;
+    grid-gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.navbar {
+    margin-top: 2rem;
+}
+
+#about-me {
+    width: 95%;
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#citat {
+    width: 95%;
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#about {
+    width: 95%; 
+    padding-left: 60%;
+    font-size: 1.2rem;
+}
+
+#about2 {
+    margin-left: 7rem;
+}
+
+#port-btn {
+    background: rgba(43, 43, 43, 0.5);
+    padding: 1.5rem 5rem;
+}
+
+#drevené_lampy a { 
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+
+#stojany a { 
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+
+#obrazy a { 
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+
+#dekor a { 
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, auto);
+}
+
+.gallery img {
+    width: 350px;
+}
+
+.produkty ul {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+}
+    
+.produkty ul li a {
+    width: 400px;
+    height: 400px;
+    font-size: 60px;
+    padding-top: 215px;
+}
+
+.produkty video {
+    max-width: 1005px;
+}
+
+.produkty h1 {
+    margin-top: -14rem;
+    margin-bottom: 9.2rem;
+    font-size: 4rem;
+}
+
+.popis-grid {   
+    margin-bottom: -15.75rem;
+}
+
+#portret a{
+    display: flex;
+    height: 300px;
+    background: url(../img/portret-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#svadba a{
+    display: flex;
+    height: 300px;
+    background: url(../img/svadba-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#sen a{
+    display: flex;
+    height: 300px;
+    background: url(../img/sen-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#priroda a{
+    display: flex;
+    height: 300px;
+    background: url(../img/priroda-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#zvierata a{
+    display: flex;
+    height: 300px;
+    background: url(../img/zvierata-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#udalost a{
+    display: flex;
+    height: 300px;
+    background: url(../img/udalost-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+#architektura a{
+    display: flex;
+    height: 300px;
+    background: url(../img/architektura-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+}
+
+.container-cennik {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cont-slider {
+    border-bottom: 10rem solid rgb(211, 211, 211);
+}
+
+.container-cennik ul li:first-child {
+    opacity: 1;
+}
+
+.container-cennik ul {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.container-cennik .btn {
+    opacity: 1;
+}
+
+#objednávka {
+    background: url(../img/objednavka_1.jpg)
+    no-repeat center center/cover; 
+}
+
+.blog-grid div {
+    opacity: 1;
+    transition: all, 0.5s;
+    margin: auto;
+    margin-top: 22%;
+  }
+
+  .cont-blog {
+    grid-gap: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+.blog-grid .btn {
+    background: rgb(211, 211, 211);
+}

@@ -1,0 +1,412 @@
+/* Header*/
+
+body {
+    overflow-x: hidden;
+}
+
+#header {
+    padding-bottom: 3rem;
+}
+
+#header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+#header h5 {
+    text-align: center;
+    letter-spacing: 0.38rem;
+}
+
+/* Navbar */
+
+.navbar ul {
+    top: 7.5rem;
+}
+
+.navbar ul li a {
+    font-size: 0.6rem;
+}
+
+#navbar-gallery {
+    margin-top:0;
+}
+
+/* Home */
+
+#cont1 {
+    margin-top: 3rem;
+    background: url(../img/home1-mobil.jpg)
+    no-repeat center center/cover;
+    color: white;
+    height: 15rem;
+}
+
+#cont2 {
+    background: url(../img/home2-mobil.jpg)
+    no-repeat center center/cover;
+    height: 15rem;
+}
+
+#cont3 {
+    background: url(../img/home3m.jpg)
+    no-repeat center center/cover;
+    height: 15rem;
+}
+
+#cont4 {
+    background: url(../img/home4m.jpg)
+    no-repeat center center/cover;
+    height: 25rem;
+}
+
+#about-me {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    text-align:center;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#citat {
+    background: rgba(43, 43, 43, 0.1);
+    padding: 0 1rem;
+    margin: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top:1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#about {
+    background: rgba(43, 43, 43, 0.1);
+    padding:0 1rem;
+    margin: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top:0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.about2 {
+    padding-top: 9rem;
+}
+
+#about2 {
+    background: rgba(43, 43, 43, 0.1);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.about3 {
+    padding-top: 7rem;
+    font-size: 0.8rem;
+}
+
+.about4 {
+    padding-top: 2rem;
+}
+
+#about4 {
+    background: rgba(43, 43, 43, 0.1);
+    padding: 1rem 1rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Obchod */
+
+#obchod-welcome {
+    margin-top: 3rem;
+    padding: 2px 0;
+    transition: al 0.5s;
+}
+
+.gallery a img {
+    opacity: 1;
+}
+
+.gallery a img {
+    width: 350px;
+}
+
+#obchod-welcome p{
+    text-align: center;
+    display: block;
+    width: 100vw;
+    margin: auto;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(43, 43, 43, 0.5);
+}
+
+.popis-grid {  
+    margin-bottom: -1.5rem;
+}
+
+.popis h3 {
+    font-size: 1.2rem;
+}
+
+.popis p {
+    font-size: 1rem;
+}
+
+.popis .btn {
+    margin-bottom: -17rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#formular {
+    background:rgba(211, 211, 211, 0.5);
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#formular div input {
+    width:18rem;
+}
+
+#formular div textarea {
+    width: 18rem;
+}
+
+#formular select {
+    width: 18rem;
+}
+
+#odoslať {
+    width: 18rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(1, auto);
+}
+
+.gallery img {
+    width: 400px;
+    opacity: 1;
+}
+
+.dohoda {
+    margin-top: 3rem;
+    background: url(../img/dohoda-mobil.jpg)
+    no-repeat center center/cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.dohoda h1 {
+    font-size: 3rem;
+}
+
+#sold {
+    font-size: 5rem;
+}
+
+form {
+    margin-top: -18rem;
+}
+
+/* O mne / kontakt */
+
+.fixed-bg div {
+    background: rgba(43, 43, 43, 0.5);
+    width: 90%;
+    margin:auto;
+    margin-top: 25vh;
+    padding: 2rem 0;
+    transition: all 0.5s;
+  }
+
+  .fixed-bg div:hover {
+    width: 90%;
+    margin:auto;
+    margin-top: 25vh;
+}
+
+.fixed-bg h4 {
+    margin:auto;
+    padding-left: 5%;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid white;
+  }
+
+  .fixed-bg div a {
+      padding-top: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 5%;
+    border-bottom: 1px solid white;
+    
+  }
+
+  .fixed-bg p {
+    margin:auto;
+    width: 85%;
+    font-size: 1.2rem;
+  }
+
+  .fixed-bg a span {
+    opacity: 0;
+    transition: all 0.5s;
+    padding-left: 1rem;
+    opacity: 0.5;
+  }
+
+.bg-4 div,
+.bg-4 div:hover,
+.bg-5 div,
+.bg-5 div:hover,
+.bg-6 div,
+.bg-6 div:hover {
+  margin-top: 10vh;
+}
+
+.bg-2 div,
+.bg-2 div:hover {
+    margin-top: 5vh;
+}
+
+  .bg-1 {
+    background-image: url("../img/about01m.jpg");
+  }
+  
+  .bg-2 {
+    background-image: url("../img/about02-hoverm.jpg");
+    transition: all 0.5s;
+  }
+  
+  .bg-2:hover {
+    background-image: url("../img/about02-hoverm.jpg");
+  }
+  
+  .bg-3 {
+    background-image: url("../img/about03m.jpg");
+  }
+  
+  .bg-4 {
+    background-image: url("../img/about04m.jpg");
+  }
+  
+  .bg-5 {
+    background-image: url("../img/about05m.jpg");
+  }
+  
+  .bg-6 {
+    background-image: url("../img/about06m.jpg");
+  }
+
+/* Footer */
+
+#copy {
+    font-size: 0.8rem;
+}
+
+#objednávka h1 {
+    font-size: 4rem;
+}
+
+#objednávka div {
+    margin-top: 0;
+}
+
+.produkty ul {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+}
+
+.produkty ul li a {
+    width: 100%;
+    font-size: 50px;
+    padding-top: 215px;
+}
+
+.produkty video {
+    max-width: 100%;
+}
+
+.produkty h1 {
+    margin-top: -7rem;
+    margin-bottom: 5.3rem;
+    font-size: 1.5rem;
+}
+
+#drevené_lampy a { 
+    width: 100%;
+}
+
+#stojany a { 
+    width: 100%;
+}
+
+#obrazy a { 
+    width: 100%;
+}
+
+#dekor a { 
+    width: 100%;
+}
+
+.footer div a i{
+    font-size: 1rem;
+}
+
+.footer {
+    grid-template-columns: 1fr 1fr;
+}
+
+#btn-obrazy {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-bottom: -10rem;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .obraz-grid {
+    max-height: 500px;
+}
+
+.produkty-grid div {
+    margin-top: 5rem;
+  }
+
+  .blog-last {
+    margin-bottom: 10rem;
+  }
+
+  .blog-grid div {
+    margin-top: 15%;
+  }
+
+
+
+
+
+

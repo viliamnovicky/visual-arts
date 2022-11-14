@@ -1,0 +1,117 @@
+.cont-form {
+    animation: goUp;
+    margin-top: 8rem;
+    background: url(../img/dohoda.jpg) no-repeat center center/cover;
+    background-size: cover;
+    height: 120rem;
+    position: relative;
+
+    h1 {
+        padding-top: 20vh;
+        font-size: 10rem;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 50;
+        text-align: center;
+        width: vw;
+        color: white;
+        height: 50rem;
+
+        @include respond(tab-port) {
+            font-size: 8rem
+        }
+
+        @include respond(phone) {
+            font-size: 6rem
+        }
+
+        @include respond(mini-phone) {
+            font-size: 4rem
+        }
+    }
+}
+
+.form {
+    position: absolute;
+    background: rgba($color-light, 0.5);
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    font-weight: 1000;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(tab-land) {
+        width: 80%;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+      }
+
+    div {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 5%;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 0.5rem;
+        font-size: 1.6rem;
+
+        input {
+            width: 40rem;
+            margin: auto;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 1000;
+            font-size: 1.6rem;
+            opacity: 75%;
+            margin-top: 0;
+            text-align: center;
+
+            @include respond(phone) {
+                width: 30rem;
+              }
+
+            &:hover {
+                opacity: 100%;
+            }
+        }
+
+        textarea {
+            width: 40rem;
+            font-family: 'Dosis', sans-serif;
+            font-size: 1.7rem;
+            opacity: 75%;
+            margin-top: 0.5rem;
+            font-weight: 1000;
+
+            @include respond(phone) {
+                width: 30rem;
+              }
+
+            &:hover {
+                opacity: 100%;
+            }
+        }
+    }
+}
+
+.send {
+    background: rgba(white, 0.5);
+    width: 40rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: none;
+    font-size: 2.5rem;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+
+    @include respond(phone) {
+        width: 30rem;
+      }
+}
+
+.send:hover {
+    background: white;
+}

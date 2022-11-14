@@ -1,0 +1,114 @@
+.bg-1 {
+    background-image: url('../img/about01.jpg');
+    animation: goUp;
+    animation-duration: 1s;
+
+    @include respond(tab-port) {
+        background-image: url("../img/about01m.jpg");
+      }
+}
+
+.bg-2 {
+    background-image: url('../img/about02.jpg');
+
+    @include respond(tab-port) {
+        background-image: url("../img/about02m.jpg");
+      }
+}
+
+.bg-2:hover {
+    background-image: url('../img/about02-hover.jpg');
+
+    @include respond(tab-port) {
+        background-image: url("../img/about01m.jpg");
+      }
+}
+
+.bg-3 {
+    background-image: url('../img/about03.jpg');
+
+    @include respond(tab-port) {
+        background-image: url("../img/about03m.jpg");
+      }
+}
+
+.bg-4 {
+    background-image: url('../img/about04.jpg');
+
+    @include respond(tab-port) {
+        background-image: url("../img/about04m.jpg");
+      }
+}
+
+.bg-5 {
+    background-image: url('../img/about05.jpg');
+
+    @include respond(tab-port) {
+        background-image: url("../img/about05m.jpg");
+      }
+}
+
+.bg-6 {
+    background-image: url('../img/about06.jpg');
+    position: relative;
+
+    @include respond(tab-port) {
+        background-image: url("../img/about06m.jpg");
+      }
+}
+
+.bg-2 div,
+.bg-2 div:hover,
+.bg-4 div,
+.bg-4 div:hover,
+.bg-5 div,
+.bg-5 div:hover,
+.bg-6 div,
+.bg-6 div:hover {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.bg-4 p {
+    text-align: center;
+}
+
+.bg-6 .btn {
+    margin-top: 3.2rem;
+    background: rgba($color-grey, 0.4);
+    padding: 1.6rem 1.6rem;
+    margin: auto;
+    width: 20rem;
+    color: white;
+
+    @include respond(tab-port) {
+        position: absolute;
+        bottom: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+}
+
+#body-contact {
+  height: 100%;
+}
+
+#html-contact {
+  height: 100%;
+}
+
+#contact-mail span{
+  margin-left: 4.5rem;
+}
+
+#contact-ig span{
+  margin-left: 13.7rem;
+}
+
+#contact-fb span{
+  margin-left: 4.1rem;
+}
+
+#contact-yt span{
+  margin-left: 12.6rem;
+}

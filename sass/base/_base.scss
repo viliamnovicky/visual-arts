@@ -1,0 +1,130 @@
+// ELEMENTS
+
+//SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: 1.5rem;
+    transition: all 0.5s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(white, 0.8);
+    transition: all 0.5s;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba($color-grey, 0.5);
+    transition: all 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($color-grey, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $color-light;
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+a {
+    font-size: $font-size-paragraph;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+button {
+    -webkit-tap-highlight-color: rgba(black, 0);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: $font-size-paragraph;
+}
+
+//UNIVERSAL CLASSES
+
+.hidden {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.hidden-overflow {
+    overflow-y: hidden;
+}
+
+.hidden-pc-only {
+    @include respond(tab-land) {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.hidden-pc-to-tab-port {
+    visibility: hidden;
+    opacity: 0;
+
+    @include respond(tab-port) {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.hidden-tab-port-to-mobile {
+    visibility: visible;
+    opacity: 1;
+
+    @include respond(tab-port) {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.portrait-width {
+    width: 32vw !important;
+
+    @include respond(tab-port) {
+        width: 99vw !important;
+        height: 148.5vw !important;
+    }
+}
+
+.margin-top-small {
+    margin-top: 2rem !important;
+}

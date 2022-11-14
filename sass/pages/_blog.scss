@@ -1,0 +1,134 @@
+#blog-h1 {
+    font-size: 5rem;
+}
+
+.blog-date {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+ 
+.blog-text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+    @include respond(tab-port) {
+        width: 95%
+      }
+}
+
+.blog-text p,
+.blog-last p {
+    font-size: 1.8rem;
+    text-align: justify;
+
+    @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
+}
+
+.blog-text .btn {
+    @include respond(tab-port) {
+        display: grid;
+        margin: auto;
+        width: 35vw;
+      }
+}
+
+#blog-gallery {
+    margin: auto;
+    margin-bottom: 3.2rem;
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.blog-hidden {
+    visibility: hidden;
+    opacity: 1;
+    padding-top: 15rem;
+}
+
+.blog-img-hidden {
+    position: relative;
+    opacity: 0;
+}
+
+.section {
+    padding-top: 10rem;
+    transition: all 0.5s;
+
+    h2 {
+        font-size: 4rem;
+
+        @include respond(phone) {
+            font-size: 3rem;
+          }
+    }
+}
+
+.img {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#img {
+    pointer-events: none;
+}
+
+.place {
+    position: relative;
+}
+
+.place h1 {
+    width: 800px;
+    font-size: 10rem;
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    margin: auto;
+}
+
+.blog-type {
+    display: grid;
+    width: 90vw;
+    height: 300px;
+    background: rgb(65, 65, 65);
+    margin: auto;
+    margin-bottom: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    margin: auto;
+    margin-top: 5rem;
+    width: 1550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.more-pictures {
+    padding-top: 10rem;
+    display: grid;
+    margin: auto;
+    width: 100%;
+
+    h1 {
+        margin: auto;
+        font-size: 3.2rem;
+    }
+}
+
+.blog-last {
+    margin-bottom: 5rem;
+}
+

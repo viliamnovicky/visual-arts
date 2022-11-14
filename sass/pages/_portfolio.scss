@@ -1,0 +1,125 @@
+.portfolio {
+  ul {
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 0;
+    animation: goUp;
+    animation-duration: 1s;
+
+    li {
+      margin-bottom: 0.2rem;
+      list-style-type: none;
+      display: grid;
+
+      a {
+        display: grid;
+        align-items: center;
+        font-weight: 50;
+        opacity: 50%;
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s;
+        width: 100%;
+        height: 300px;
+
+        @include respond(tab-land) {
+          opacity: 1;
+        }
+
+        &:hover {
+          opacity: 100%;
+        }
+
+        p {
+          font-size: 13rem;
+          width: 100%;
+          text-align: right;
+          padding-right: 15vw;
+
+          @include respond(tab-port) {
+            font-size: 10rem;
+            padding-right: 0;
+            text-align: center;
+          }
+
+          @include respond(phone) {
+            font-size: 6rem;
+          }
+        }
+
+        #title-portfolio-left {
+          text-align: left;
+          padding-left: 15vw;
+
+          @include respond(tab-port) {
+            text-align: center;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#portret a {
+  background: url(../img/portret.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/portret-mobil.jpg) no-repeat center center/cover;
+  }
+}
+
+#svadba a {
+  background: url(../img/svadba.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/svadba-mobil.jpg) no-repeat center center/cover;
+  }
+}
+
+#sen a {
+  background: url(../img/sen.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/sen-mobil.jpg) no-repeat center center/cover;
+  }
+}
+
+#priroda a {
+  background: url(../img/priroda.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/priroda-mobil.jpg) no-repeat center center/cover;
+  }
+}
+
+#zvierata a {
+  background: url(../img/zvierata.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/zvierata-mobil.jpg) no-repeat center center/cover;
+  }
+}
+
+#udalost a {
+  background: url(../img/udalost.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/udalost-mobil.jpg) no-repeat center center/cover;
+  }  
+}
+
+#architektura a {
+  background: url(../img/architektura.jpg) no-repeat center center/cover;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url(../img/architektura-mobil.jpg) no-repeat center center/cover;
+  }
+}

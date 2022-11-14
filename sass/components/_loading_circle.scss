@@ -1,0 +1,73 @@
+.circle {
+  position: fixed;
+  border: 0.3rem solid transparent;
+  border-radius: 50%;
+  animation: rotate linear infinite;
+  border-width: 0.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.zero {
+  width: 10rem;
+  height: 10rem;
+  left: calc(50% - 5rem);
+  top: calc(50% - 5rem);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: calc(5rem - 0.8rem);
+}
+
+.one {
+  width: 7.5rem;
+  height: 7.5rem;
+  left: calc(50% - 3.75rem);
+  top: calc(50% - 3.75rem);
+  animation-duration: 0.5s;
+  border-top-color: rgb(41, 41, 41);
+}
+
+.two {
+  width: 10rem;
+  height: 10rem;
+  left: calc(50% - 5rem);
+  top: calc(50% - 5rem);
+  animation-duration: 0.6s;
+  border-top-color: rgb(80, 80, 80);
+}
+
+.tree {
+  width: 12.5rem;
+  height: 12.5rem;
+  left: calc(50% - 6.25rem);
+  top: calc(50% - 6.25rem);
+  animation-duration: 0.7s;
+  border-top-color: rgb(121, 121, 121);
+}
+
+.four {
+  width: 15rem;
+  height: 15rem;
+  left: calc(50% - 7.5rem);
+  top: calc(50% - 7.5rem);
+  animation-duration: 0.8s;
+  border-top-color: rgb(160, 160, 160);
+}
+
+.five {
+  width: 17.5rem;
+  height: 17.5rem;
+  left: calc(50% - 8.75rem);
+  top: calc(50% - 8.75rem);
+  animation-duration: 0.9s;
+  border-top-color: rgb(201, 201, 201);
+}
+
+.six {
+  width: 20rem;
+  height: 20rem;
+  left: calc(50% - 10rem);
+  top: calc(50% - 10rem);
+  animation-duration: 1s;
+  border-top-color: rgb(219, 219, 219);
+}

@@ -1,0 +1,21 @@
+.progress {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.progress-part {
+    text-align: center;
+    padding: 2rem 0;
+    color: $color-grey;
+    border: 1px solid white;
+
+    &:first-child {
+        background: rgba($color-grey, 0.5);
+        color: white;
+    }
+
+    &-active {
+        background: rgba(white, 0.5);
+        color: $color-grey;
+    }
+}

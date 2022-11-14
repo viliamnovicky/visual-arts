@@ -1,0 +1,39 @@
+.header {
+    font-family: "Playfair Display";
+    padding-bottom: 3rem;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 1s;
+
+    @include respond(tab-land) {
+        margin-bottom: 6rem;
+      }
+
+    h1 {
+        font-weight: 100;
+        font-size: $font-size-header;
+        letter-spacing: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        @include respond(tab-land) {
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+          }
+    }
+    
+    h5 {
+        font-size: 2rem;
+        letter-spacing: 3rem;
+        padding-bottom: 1rem;
+
+        @include respond(tab-land) {
+            letter-spacing: 1rem;
+            font-size: $font-size-paragraph;
+          }
+    }
+}
+
+.header-blogs {
+  margin-top: 4rem;
+}
