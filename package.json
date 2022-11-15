@@ -4,8 +4,8 @@
   "description": "My portfolio page",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass scss/style.scss css/style.css -w",
-    "compile:sass": "sass scss/style.scss css/style.comp.css",
+    "watch:sass": "sass sass/style.scss css/style.css -w",
+    "compile:sass": "sass sass/style.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"

@@ -28,15 +28,23 @@
 }
 
 .btn-image-modal-close {
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
+    width: 4rem;
+    height: 4rem;
     color: white;
     background: none;
     border: none;
-    padding: 2rem 2rem;
     right: 2rem;
-    top: 0.5rem;
+    top: 2rem;
     z-index: 10000;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    &:hover {
+        background: $color-grey;
+    }
 }
 
 .modal-full {
